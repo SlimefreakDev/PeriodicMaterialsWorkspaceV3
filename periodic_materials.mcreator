@@ -1,0 +1,120 @@
+{
+  "mod_elements": [
+    {
+      "name": "GasTube",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gas_tube"
+    },
+    {
+      "name": "PeriodicMaterialsGases",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "periodic_materials_gases"
+    },
+    {
+      "name": "SmartGasTube",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smart_gas_tube"
+    },
+    {
+      "name": "GasTubeRecipe",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gas_tube_recipe"
+    },
+    {
+      "name": "SmartGasTubeRecipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smart_gas_tube_recipe"
+    },
+    {
+      "name": "UnknownGasGasTubeEmpty",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unknown_gas_gas_tube_empty",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UnknownGasGasTube",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unknown_gas_gas_tube"
+    },
+    {
+      "name": "GasTubeBasicFill",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gas_tube_basic_fill",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "itemGroup.tabperiodic_materials_gases": "Periodic Materials Gases",
+      "item.periodic_materials.smart_gas_tube": "Smart Gas Tube",
+      "item.periodic_materials.unknown_gas_gas_tube": "Unknown Gas | Gas Tube",
+      "block.more_inventory_pets.silver_block": "Block of Silver",
+      "item.periodic_materials.gas_tube": "Gas Tube"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "periodic_materials",
+    "modName": "Periodic Materials",
+    "version": "1.0.0",
+    "description": "Periodic Materials mod is a simple mod that adds new ores, ingots, gems, alloys, etc. to the game.  Download Just Enough Items for a better experience!",
+    "author": "Slimefreak",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "periodic-materials-icon",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Made with MCreator.",
+    "modElementsPackage": "net.mcreator.periodicmaterials",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100354000
+}

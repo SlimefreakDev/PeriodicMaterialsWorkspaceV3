@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "tab",
+  "definition": {
+    "name": "Periodic Materials Gases",
+    "icon": {
+      "value": "CUSTOM:GasTube"
+    },
+    "showSearch": true
+  }
+}

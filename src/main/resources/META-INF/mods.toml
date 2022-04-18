@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="periodic_materials"
+version="1.0.0"
+displayName="Periodic Materials"
+credits="Made with MCreator."
+displayURL="https://mcreator.net"
+logoFile="logo.png"
+authors="Slimefreak"
+description='''
+Periodic Materials mod is a simple mod that adds new ores, ingots, gems, alloys, etc. to the game.  Download Just Enough Items for a better experience!
+'''
+
+[[dependencies.periodic_materials]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
