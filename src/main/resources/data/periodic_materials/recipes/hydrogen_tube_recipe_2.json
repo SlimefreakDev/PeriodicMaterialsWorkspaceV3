@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "periodic_materials:unfilled_hydrogen_smart_gas_tube"
+    }
+  ],
+  "result": {
+    "item": "periodic_materials:smart_gas_tube",
+    "count": 1
+  }
+}

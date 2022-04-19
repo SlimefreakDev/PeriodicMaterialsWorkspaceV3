@@ -15,7 +15,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.periodicmaterials.procedures.GasTubeBasicFillProcedure;
+import net.mcreator.periodicmaterials.procedures.HydrogenEmptyProcedure;
 import net.mcreator.periodicmaterials.itemgroup.PeriodicMaterialsGasesItemGroup;
 import net.mcreator.periodicmaterials.PeriodicMaterialsModElements;
 
@@ -26,12 +26,12 @@ import java.util.HashMap;
 import java.util.AbstractMap;
 
 @PeriodicMaterialsModElements.ModElement.Tag
-public class GasTubeItem extends PeriodicMaterialsModElements.ModElement {
-	@ObjectHolder("periodic_materials:gas_tube")
+public class HydrogenSmartGasTubeItem extends PeriodicMaterialsModElements.ModElement {
+	@ObjectHolder("periodic_materials:hydrogen_smart_gas_tube")
 	public static final Item block = null;
 
-	public GasTubeItem(PeriodicMaterialsModElements instance) {
-		super(instance, 1);
+	public HydrogenSmartGasTubeItem(PeriodicMaterialsModElements instance) {
+		super(instance, 10);
 	}
 
 	@Override
@@ -41,8 +41,18 @@ public class GasTubeItem extends PeriodicMaterialsModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(PeriodicMaterialsGasesItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("gas_tube");
+			super(new Item.Properties().group(PeriodicMaterialsGasesItemGroup.tab).maxStackSize(1).rarity(Rarity.RARE));
+			setRegistryName("hydrogen_smart_gas_tube");
+		}
+
+		@Override
+		public boolean hasContainerItem() {
+			return true;
+		}
+
+		@Override
+		public ItemStack getContainerItem(ItemStack itemstack) {
+			return new ItemStack(SmartGasTubeItem.block);
 		}
 
 		@Override
@@ -63,7 +73,7 @@ public class GasTubeItem extends PeriodicMaterialsModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("A makeshift basic gas tube. It can't sort gases."));
+			list.add(new StringTextComponent("A smart gas tube filled with hydrogen."));
 		}
 
 		@Override
@@ -74,7 +84,7 @@ public class GasTubeItem extends PeriodicMaterialsModElements.ModElement {
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 
-			GasTubeBasicFillProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+			HydrogenEmptyProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
 					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return ar;
 		}

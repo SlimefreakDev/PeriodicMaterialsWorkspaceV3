@@ -3,5 +3,7 @@
   "item.periodic_materials.smart_gas_tube": "Smart Gas Tube",
   "item.periodic_materials.unknown_gas_gas_tube": "Unknown Gas | Gas Tube",
   "block.more_inventory_pets.silver_block": "Block of Silver",
-  "item.periodic_materials.gas_tube": "Gas Tube"
+  "item.periodic_materials.gas_tube": "Gas Tube",
+  "item.periodic_materials.unfilled_hydrogen_smart_gas_tube": "(Unfilled) Hydrogen | Smart Gas Tube",
+  "item.periodic_materials.hydrogen_smart_gas_tube": "Hydrogen | Smart Gas Tube"
 }

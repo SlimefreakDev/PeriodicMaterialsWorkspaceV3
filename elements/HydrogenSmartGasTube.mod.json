@@ -3,34 +3,37 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "gastubev2",
+    "texture": "gastubev2hydrogen",
     "customModelName": "Normal",
-    "name": "Smart Gas Tube",
-    "rarity": "COMMON",
+    "name": "Hydrogen | Smart Gas Tube",
+    "rarity": "RARE",
     "creativeTab": {
       "value": "CUSTOM:PeriodicMaterialsGases"
     },
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
-      "value": ""
+      "value": "CUSTOM:SmartGasTube"
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
-    "stayInGridWhenCrafting": false,
+    "stayInGridWhenCrafting": true,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Combine with different items to obtain a different gas."
+      "A smart gas tube filled with hydrogen."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "HydrogenEmpty"
+    },
     "hasDispenseBehavior": false
   }
 }

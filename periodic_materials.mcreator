@@ -79,6 +79,70 @@
           }
         ]
       }
+    },
+    {
+      "name": "UnfilledHydrogenSmartGasTube",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unfilled_hydrogen_smart_gas_tube"
+    },
+    {
+      "name": "HydrogenFill",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrogen_fill",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HydrogenEmpty",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrogen_empty",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HydrogenSmartGasTube",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrogen_smart_gas_tube"
+    },
+    {
+      "name": "HydrogenTubeRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrogen_tube_recipe"
+    },
+    {
+      "name": "HydrogenTubeRecipe2",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrogen_tube_recipe_2"
     }
   ],
   "variable_elements": [],
@@ -89,7 +153,9 @@
       "item.periodic_materials.smart_gas_tube": "Smart Gas Tube",
       "item.periodic_materials.unknown_gas_gas_tube": "Unknown Gas | Gas Tube",
       "block.more_inventory_pets.silver_block": "Block of Silver",
-      "item.periodic_materials.gas_tube": "Gas Tube"
+      "item.periodic_materials.gas_tube": "Gas Tube",
+      "item.periodic_materials.unfilled_hydrogen_smart_gas_tube": "(Unfilled) Hydrogen | Smart Gas Tube",
+      "item.periodic_materials.hydrogen_smart_gas_tube": "Hydrogen | Smart Gas Tube"
     }
   },
   "foldersRoot": {
